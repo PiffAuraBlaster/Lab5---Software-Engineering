@@ -7,4 +7,4 @@ rescue LoadError
   require 'tictactoe'
 end
 
-TicTacToe::Game.new(TicTacToe::Human.new("x"),TicTacToe::Human.new("o")).run
+TicTacToe::Game.new(TicTacToe::Human.new("x"),TicTacToe::ai.new("o")).run
