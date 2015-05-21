@@ -9,6 +9,8 @@ plrs = ["x","o"]
 brd = Array.new(9," ")
 until not brd.include?(" ") or (lines(brd).find{|line| line[0] != " " and line.uniq.length == 1})
   puts brd.each_slice(3).to_a.map{|r|r.join(" | ")}.join("\n- * - * -\n") + "\n"
+  #if x turn checks if valid move.
+  
   print "Enter a valid move for #{plrs[0]}:  "
   move = gets.to_i
   while(brd[move] != " ")
