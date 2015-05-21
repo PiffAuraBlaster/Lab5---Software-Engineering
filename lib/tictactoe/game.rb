@@ -2,7 +2,7 @@ module TicTacToe
   class Game
     # Initializes a new game with two players.
     # Players must respond to `get_move`.
-    # 
+    #
     # @param p1 [Player] the player who goes first.
     # @param p2 [Player] the player who goes second
     def initialize(p1,p2)
