@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+begin
+  require 'tictactoe'
+rescue LoadError
+  require 'rubygems'
+  require 'tictactoe'
+end
+
+TicTacToe::Game.new(TicTacToe::Human.new("x"),TicTacToe::Human.new("o")).run
